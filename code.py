@@ -1,4 +1,3 @@
-"""A simple Task Manager script."""
 from typing import List
 
 class TaskManager:
