@@ -1,3 +1,4 @@
+"""A simple Task Manager script."""
 from typing import List
 
 class TaskManager:
@@ -13,3 +14,11 @@ class TaskManager:
             raise ValueError("Task cannot be empty")
         self.tasks.append(task)
         print(f"Task added: {task}")
+
+    def remove_task(self, task: str) -> None:
+        """Remove a task from the list."""
+        if task in self.tasks:
+            self.tasks.remove(task)
+            print(f"Task removed: {task}")
+        else:
+            print("Task not found.")
